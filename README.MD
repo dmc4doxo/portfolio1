@@ -11,3 +11,9 @@ I did inspect on chrome and it says image is justify center... but image is in f
 Anyway, this is my first html/css class. Please bear with me a bit.
 Thanks,
 Mack
+====UPDATE====
+By adding "Display grid" to about-img,
+I was able to do the justify-self to center.
+
+I have advance to exactly where I was yesterday. My offset borderline goes crazy at the bottom. So, I am back exactly where I was in the last two days.
+Please tale a look. Thanks
