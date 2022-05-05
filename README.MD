@@ -1,0 +1,13 @@
+Hi John
+First I usually try to do the project myself without following your video... when I get stuck, I eaither download the resource of the part to guide me or I just copy what you have and try to learn from my mistakes.
+
+With this project, it is a bit hard since there is no resource per portion... and sometimes, we go back and add to global and come down to a segment again.
+
+Also, I have tried to implement the way I think makes sense for me. For example, instead of using hero-img, I copied the same but did about-img. Less confusing at my level.
+
+So, after I scrapped everything that I did over the last 3 days (it just got too messy and nothing was working anymore). I have now started to follow your video on the about. Still, I am doing exactly the same but getting different result. Case and point: stuck at the photo of about. It wont move to the center. Why???
+I did inspect on chrome and it says image is justify center... but image is in fact justify left.
+:-) I don't think I am meant to be a front end dev person.  
+Anyway, this is my first html/css class. Please bear with me a bit.
+Thanks,
+Mack
