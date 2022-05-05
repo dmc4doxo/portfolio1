@@ -17,3 +17,17 @@ I was able to do the justify-self to center.
 
 I have advance to exactly where I was yesterday. My offset borderline goes crazy at the bottom. So, I am back exactly where I was in the last two days.
 Please tale a look. Thanks
+====UPDATE @ 12:28pm======
+Finally working.
+I have to rename my "about-info" to be about-info-index"
+
+Remove conflict with about-info for the other about page.
+https://html-css-portfolio-css-grid-project.netlify.app/about.html
+
+It is confusing to have two distinct sections called "About". So, I have About-Index and About.html. They are different
+
+I will continue and I am sure many more challenges...
+The sad thing is that I am not sure I learn much from these trouble. I just understood that centering and justifying elements is not as simple as the course make it sound :-). Sometimes, they don't work and there is no logical (that I know of) reasons for it.  
+Coz... even if I had the element styled in about-info, why didn't it allow me to overide?
+
+Anyway, thank you for helping me go thru this. I am sure more to come.

@@ -460,6 +460,14 @@ About - Separate Page
 About in the Index Page
 =======================
 */
+
+/* .about-info-index  */
+/* no need to use.  Remove conflict with about-inof for the other about page.
+https://html-css-portfolio-css-grid-project.netlify.app/about.html
+
+It is confusing to have two distinct sections called "About".  So, I have About-Index and About.html.  They are different
+*/
+
 .about-title {
   text-align: left;
   margin-bottom: 2rem;
@@ -468,6 +476,7 @@ About in the Index Page
 .about-title .underline {
   margin-left: 0;
 }
+
 .about-photo {
   max-width: 25rem;
   max-height: 30rem;
@@ -506,6 +515,17 @@ About in the Index Page
     top: 2rem;
     left: -2rem;
     border-radius: var(--radius);
+  }
+  .about-title {
+    text-align: left;
+  }
+
+  .about-title p {
+    text-align: left;
+  }
+
+  .about-btn {
+    text-align: left;
   }
 }
 
