@@ -178,6 +178,11 @@ p {
   bottom: 4rem;
   text-align: center;
 }
+
+.bg-grey {
+  background: var(--clr-grey-10);
+}
+
 /* added during recording */
 
 /*
@@ -536,6 +541,53 @@ It is confusing to have two distinct sections called "About".  So, I have About-
 Services
 ===============
 */
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service .underline {
+  height: 0.12rem;
+  width: 3rem;
+  transition: var(--transition);
+}
+.service p {
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+@media screen and (min-width: 992px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
 /* small screen layout setup */
 /* bg-grey in globals */
 
@@ -571,12 +623,17 @@ Blog
 /*
 =============== 
 Footer
+Why the styling disappears in small screen?
 ===============
 */
 .footer {
   display: grid;
   min-height: 15rem;
-  width: 100vw;
+  /* position: sticky;
+  bottom: 0;
+  margin-top: 4rem; */
+  bottom: 0;
+  width: 100%;
   place-items: center;
   background: #222;
   border-bottom-left-radius: var(--radius);
