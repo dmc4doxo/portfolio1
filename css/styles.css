@@ -487,7 +487,6 @@ It is confusing to have two distinct sections called "About".  So, I have About-
   max-height: 30rem;
   object-fit: cover;
   border-radius: var(--radius);
-  
 }
 
 .about-center {
@@ -579,6 +578,7 @@ Services
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
+}
 
 @media screen and (min-width: 992px) {
   .services-center {
@@ -595,58 +595,58 @@ Services
 Projects
 ===============
 */
-.project-title{
+.project-title {
   margin-bottom: 2rem;
 }
-.projects-center{
-margin-top: 3rem;
+.projects-center {
+  margin-top: 3rem;
 }
 
-.projects-text{
+.projects-text {
   width: 85vw;
   max-width: 30rem;
   margin: 0 auto;
 }
 
-.project{
-position:relative;
-background: var(--clr-primary-5);
-margin-bottom: 2rem;
-border-radius: var(--radius);
-/* border: 1rem solid red ; */
+.project {
+  position: relative;
+  background: var(--clr-primary-5);
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  /* border: 1rem solid red ; */
 }
 
-.project-info{
+.project-info {
   text-align: center;
   color: var(--clr-white);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: var(--transition);
 }
 
-.project-info p{
+.project-info p {
   text-transform: capitalize;
   color: var(--clr-white);
 }
 
-.project:hover .project-info{
+.project:hover .project-info {
   opacity: 1;
 }
 
-.project-img{
-border-radius: var(--radius);
-height: 15rem;
-object-fit: cover;
+.project-img {
+  border-radius: var(--radius);
+  height: 15rem;
+  object-fit: cover;
 }
 
-.project:hover .project-img{
+.project:hover .project-img {
   opacity: 0.1;
 }
 
-.project::after{
+.project::after {
   content: "";
   position: absolute;
   top: 0;
@@ -657,58 +657,57 @@ object-fit: cover;
   border-radius: var(--radius);
   transition: var(--transition);
   opacity: 0;
-} 
+}
 
-.project:hover::after{
+.project:hover::after {
   opacity: 1;
   transform: scale(0.8);
 }
 
-@media screen and (min-width:676px){
+@media screen and (min-width: 676px) {
   .projects-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
 }
-@media screen and (min-width:992px){
+
+@media screen and (min-width: 992px) {
   .projects-center {
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  
-@media screen and (min-width:1170px){
-      .project-img{
-      height: 100%;
-    }
-    .project{
-      height: 100%;
-    }
+@media screen and (min-width: 1170px) {
+  .project-img {
+    height: 100%;
+  }
+  .project {
+    height: 100%;
+  }
   .projects-center {
     grid-template-rows: 200px 200px;
     gap: 1rem;
-    grid-template-areas: 
-    "a b b"
-    "a c d";
-    }
-
-    .project-1{
-grid-area: a;
-    }
-   
-    .project-2{
-grid-area: b;
-    }
-   
-    .project-3{
-grid-area: c;
-    }
-    .project-4{
-grid-area: d
-    }
-   
+    grid-template-areas:
+      "a b b"
+      "a c d";
   }
 
+  .project-1 {
+    grid-area: a;
+  }
+
+  .project-2 {
+    grid-area: b;
+  }
+
+  .project-3 {
+    grid-area: c;
+  }
+  .project-4 {
+    grid-area: d;
+  }
+}
 
 /*
 =============== 
@@ -742,10 +741,10 @@ Why the styling disappears in small screen?
 
 .footer {
   display: grid;
-  min-height: 15rem;
+  height: 15rem;
   /* position: sticky;
-  bottom: 0;
-  margin-top: 4rem; */
+bottom: 0;
+margin-top: 4rem; */
   bottom: 0;
   width: 100%;
   place-items: center;
@@ -773,4 +772,3 @@ Why the styling disappears in small screen?
 .footer-icon:hover {
   color: var(--clr-primary-1);
 }
-

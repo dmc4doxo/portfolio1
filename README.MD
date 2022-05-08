@@ -42,3 +42,10 @@ Now, I now sure if I should proceed to setup the Large screen stying with this b
 
 I went ahead with styling for large screen at 1170px min... that works fines...but my bug with very small screen size is still there... size below 600px and almost all sty;ing disappear.
 ---ANY HELP WILL BE APPRECIATED----
+
+===== UPDATE 3 === 5/8/2022
+Styling bug fixed!
+closing curly braces missing for 2 @media elements.
+--- footer issue also seemed solved!
+Back on-track...
+===== End of 5/8/2022===
