@@ -31,3 +31,9 @@ The sad thing is that I am not sure I learn much from these trouble. I just unde
 Coz... even if I had the element styled in about-info, why didn't it allow me to overide?
 
 Anyway, thank you for helping me go thru this. I am sure more to come.
+
+=== UPDATE 5/8/2022====
+Project Section:
+
+This section is working with everything when the screen size is above 676px approx. Below that value, all the styllings disappear. I have not yet setup @media so I am very confuse why this behavior.
+Now, I now sure if I should proceed to setup the Large screen stying with this bug...
