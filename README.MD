@@ -37,3 +37,8 @@ Project Section:
 
 This section is working with everything when the screen size is above 676px approx. Below that value, all the styllings disappear. I have not yet setup @media so I am very confuse why this behavior.
 Now, I now sure if I should proceed to setup the Large screen stying with this bug...
+
+===== UPDATE 2 === 5/8/2022
+
+I went ahead with styling for large screen at 1170px min... that works fines...but my bug with very small screen size is still there... size below 600px and almost all sty;ing disappear.
+---ANY HELP WILL BE APPRECIATED----
