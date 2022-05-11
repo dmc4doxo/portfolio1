@@ -418,48 +418,38 @@ hero-info h4 {
 
 /*
 =============== 
+Single Page 
 About - Separate Page
 ===============
 */
 /* section title added to globals */
-.about-body {
-  overflow: hidden;
-}
-.about-section {
-  min-height: 60vh;
-  margin: 0px;
+
+.about-container {
+  height: calc(100vh - 5rem - 198px);
   background: var(--clr-primary-10);
   width: 100%;
-  justify-content: center;
-  display: grid;
-  grid-template-rows: 1fr auto;
 }
 
-.about-container h1 {
+.section-title h1 {
   padding-top: 5rem;
-  text-align: center;
-}
-.about-info {
-  text-align: center;
-}
-.about-info p {
-  padding-top: 3rem;
-  text-align: justify;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  max-width: 45rem;
-  padding-bottom: 5rem;
 }
 
-.about-container span {
+.about-info p {
+  margin: 4rem auto;
+  max-width: 45rem;
+}
+
+.about-info span {
   text-transform: uppercase;
-  color: var(--clr-primary-3);
+  color: var(--clr-primary-5);
   transition: var(--transition);
 }
 
-.about-container span:hover {
+.about-info span:hover {
   color: var(--clr-grey-1);
+  transition: var(--transition);
 }
+/* above could be a:hover */
 /*
 =======================
 About in the Index Page
@@ -592,7 +582,7 @@ Services
 /* bg-grey in globals */
 /*
 =============== 
-Projects
+Projects - This is project in Index page.
 ===============
 */
 .project-title {
@@ -933,6 +923,7 @@ Blog
 .blog-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  /* we could use auto-fit here because there are enough element to fill the space */
   gap: 2rem 1rem;
 }
 
@@ -1007,12 +998,114 @@ Blog
 
 /*
 =============== 
+Contact page - Single Page per instructore
+===============
+*/
+.single-page {
+  background: var(--clr-primary-10);
+  min-height: calc(100vh - 5rem - 198px);
+}
+.page-info {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-info a {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.page-info a:hover {
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+}
+
+/* =============== ============================
+Projects -   Signle page - own html project.html
+======================================== */
+.project-hero {
+  margin: 0;
+  padding-top: 2rem;
+  height: 40vh;
+  background: var(--clr-primary-10);
+  display: grid;
+  /* place-items: center; */
+  /* place-items did not work to center... why? */
+  justify-content: center;
+  justify-items: center;
+}
+.project-hero .section-title {
+  margin-bottom: 0;
+}
+
+.single-project {
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+}
+
+.project-container img {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.project-container {
+  position: relative;
+}
+
+.project-details {
+  padding: 2rem 1.5rem;
+}
+.project-details p {
+  margin-bottom: 0;
+}
+
+.project-icon {
+  position: absolute;
+  font-size: 1.75rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 4rem;
+  height: 4rem;
+  background: var(--clr-primary-5);
+  color: var(--clr-grey-2);
+  border: 0.375rem solid var(--clr-grey-10);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.project-page-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 3rem, 1rem;
+}
+
+.project-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem 1.5rem;
+  padding-bottom: 2rem;
+  color: var(--clr-primary-5);
+}
+.project-footer a {
+  text-transform: capitalize;
+  /* text-align: end; */
+  justify-self: end;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.project-footer a:hover {
+  color: var(--clr-primary-1);
+}
+/*
+=============== 
 Footer
-Why the styling disappears in small screen?
 ===============
 */
 
 .footer {
+  padding-bottom: rem;
   display: grid;
   height: 15rem;
   /* position: sticky;
