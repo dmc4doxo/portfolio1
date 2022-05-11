@@ -506,6 +506,7 @@ It is confusing to have two distinct sections called "About".  So, I have About-
     top: 2rem;
     left: -2rem;
     border-radius: var(--radius);
+    z-index: -1;
   }
   .about-title {
     text-align: left;
