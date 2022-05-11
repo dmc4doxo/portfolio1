@@ -422,13 +422,13 @@ About - Separate Page
 /* section title added to globals */
 
 .about-container {
-  height: calc(100vh - 5rem - 198px);
+  height: calc(100vh - 5rem);
   background: var(--clr-primary-10);
   width: 100%;
 }
 
 .section-title h1 {
-  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .about-info p {
